@@ -1,0 +1,24 @@
+# This file specifies the default facets for which the output ui_components
+# element is created.
+
+# Each line has 6 items as shown below.
+# facetName, tableName, dbcodeFieldName, valueFieldName, facetValueOrder, maxValues
+
+# facetValueOrder: "default" orders by the dbcode field; "alphabetical" orders alphabetically, in other words by the 
+# value field.
+
+# maxValues: integer limit on the no. of facet values to be listed in the output; negative integers ensure that all values 
+# are listed in the output.
+
+Class, lc_classes__id, lc_classes__id, lc_classes, default, -1
+Fiction/NonFiction, fiction_nonfiction__id, fiction_nonfiction__id, fiction_nonfiction, default, -1
+Genre, genres__id, genres__id, genres, default, 500
+Language, languages__id, languages__id, languages, default, -1
+Format, format__id, format__id, format, default, -1
+Page Count, page_count_bin__id, page_count_bin__id, page_count_bin, default, -1
+Word Count, word_count_bin__id, word_count_bin__id, word_count_bin, default, -1
+Publication Country, publication_country__id, publication_country__id, publication_country, default, -1
+Publication State, publication_state__id, publication_state__id, publication_state, default, -1
+Publication Place, publication_place__id, publication_place__id, publication_place, default, 500
+
+HTRC Public Workset, HTRC_public_worksets__id, HTRC_public_worksets__id, HTRC_public_worksets, alphabetical, -1

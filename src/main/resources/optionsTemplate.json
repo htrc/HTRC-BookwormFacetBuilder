@@ -1,0 +1,47 @@
+{
+    "default_search": [
+        {
+            "counttype": "Occurrences_per_Million_Words", 
+            "search_limits": [
+                {
+                    "word": [
+                        "freedom"
+                    ]
+                }
+            ], 
+            "smoothingSpan": 5, 
+            "time_measure": "date_year", 
+            "words_collation": "Case_Insensitive"
+        }
+    ],
+    "settings": {
+	"host": "http://bookworm.htrc.illinois.edu/cgi-bin/dbbindings.py",
+        "dbname": "hathipd", 
+        "itemName": " text", 
+        "sourceName": "HathiTrust Digital Library", 
+	"bookwormName": "HathiTrust Bookworm",
+        "sourceURL": "http://hathitrust.org"
+    }, 
+    "ui_components": [
+        {
+            "dbfield": "word", 
+            "name": "Word(s)", 
+            "type": "text"
+        }, 
+        "facetsPlaceHolder",
+        {
+            "dbfield": "date_year", 
+            "initial": [
+                1750, 
+                1923
+            ], 
+            "name": "Year", 
+            "range": [
+                1500, 
+                2015
+            ], 
+            "type": "time", 
+            "unit": "year"
+        }
+    ]
+}
