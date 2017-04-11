@@ -33,7 +33,7 @@ java -jar HTRC-BookwormFacetBuilder.jar [-d database]
 
 -f 	File containing details regarding which facets to include in the output, the names of tables and 
         columns containing facet information, the sort order, and the number of facet values. See 
-        src/main/resources/facetSpecs.txt.
+        [src/main/resources/facetSpecs.txt](/blob/develop/src/main/resources/facetSpecs.txt).
 
 -t	Template file using which the output file is created. This file contains a place holder indicating 
         where facet information needs to be placed. See src/main/resources/optionsTemplate.json. 
